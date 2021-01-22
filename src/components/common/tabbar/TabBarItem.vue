@@ -26,7 +26,7 @@ export default {
   methods: {
     // 点击就将当前组件对应的值传递过来
     itemClick() {
-      this.$router.push(this.link);
+      this.$router.replace(this.link);
     }
   },
   computed: {
@@ -43,6 +43,7 @@ export default {
 </script>
 
 <style  scoped>
+/* 此处修改的是一个块的样式 */
 .tab-bar-item {
   flex: 1;
   margin-top: 6px;

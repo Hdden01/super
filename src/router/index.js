@@ -1,9 +1,9 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
+const About = () => import('views/category/Aboout');
+const Home=()=>import('views/home/Home');
 // 1.安装路由
 Vue.use(VueRouter);
-const Home = () => import('../views/Home.vue');
-const About=()=>import('../views/Aboout.vue');
 const routes = [
     {
         path: "",

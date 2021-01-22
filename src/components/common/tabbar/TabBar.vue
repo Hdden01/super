@@ -1,5 +1,5 @@
 <template>
-    <div class="tab-bar" :style="isColor">
+    <div class="tab-bar" >
         <slot></slot>
     </div>
 </template>
