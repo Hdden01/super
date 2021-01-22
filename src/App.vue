@@ -1,24 +1,21 @@
 <template>
   <div id="app">
-    <h2>sjasjasjansasn</h2>
+    <keep-alive>
+      <router-view></router-view>
+    </keep-alive>
+  <mainTabBar></mainTabBar>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import mainTabBar from "components/content/mainTabbar/mainTabBar";
 export default {
-  name: 'App'
+  name: 'App',
+  components: {
+    mainTabBar
+  }
 }
 </script>
-
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+@import '~assets/css/base.css';
 </style>
