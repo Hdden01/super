@@ -1,8 +1,10 @@
 <template>
   <div id="app">
+    <!-- 路由展示 -->
     <keep-alive>
       <router-view></router-view>
     </keep-alive>
+    <!-- tabbar -->
   <mainTabBar></mainTabBar>
   </div>
 </template>
@@ -18,4 +20,7 @@ export default {
 </script>
 <style>
 @import '~assets/css/base.css';
+#app{
+  position: relative;
+}
 </style>

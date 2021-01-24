@@ -1,5 +1,4 @@
 <template>
-  <div>
     <TabBar>
       <TabBarItem link="/home" cor="#e56971">
         <template v-slot:icon> 
@@ -46,7 +45,6 @@
         </template>
       </TabBarItem>
     </TabBar>
-  </div>
 </template>
 
 <script>
@@ -67,7 +65,4 @@ export default {
 </script>
 
 <style scoped>
-div {
-  height: 46px;
-}
 </style>
