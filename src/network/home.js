@@ -7,3 +7,16 @@ export async function getHomeMultipledata() {
         url:'/home/multidata'
     })
  }
+//  商品信息展示数据  特殊点根据页面转换数据
+export async function getHomeGoodsdata(type,page) {
+    return request({
+        url:"/home/data",
+        // 相当于路由的query传参
+        params:{
+            type,
+            page
+
+        }
+    })
+    
+}
